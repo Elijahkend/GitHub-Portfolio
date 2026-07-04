@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic page setup for browser and mobile display -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS 499 ePortfolio</title>
+
+    <!-- Internal CSS styling for the full ePortfolio page -->
+    <style>
+        /* Removes default browser spacing and keeps layout sizing consistent */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Main page background, font, and text color */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+            color: #f8fafc;
+            line-height: 1.6;
+        }
+
+        /* Header section with the main ePortfolio title */
+        header {
+            text-align: center;
+            padding: 70px 20px;
+            background: radial-gradient(circle at top, #2563eb, #0f172a);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+        }
+
+        /* Main title styling */
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.45);
+        }
+
+        /* Subtitle text under the main title */
+        header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: auto;
+            color: #dbeafe;
+        }
+
+        /* Navigation bar for moving through page sections */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            padding: 18px;
+            background-color: rgba(15, 23, 42, 0.95);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+        }
+
+        /* Navigation links */
+        nav a {
+            color: #bfdbfe;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        /* Navigation hover effect */
+        nav a:hover {
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        /* Main content width and spacing */
+        main {
+            width: 90%;
+            max-width: 1100px;
+            margin: 50px auto;
+        }
+
+        /* Space between main sections */
+        section {
+            margin-bottom: 45px;
+        }
+
+        /* Card style used for each content block */
+        .card {
+            background: linear-gradient(145deg, #1e293b, #0f172a);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 18px;
+            padding: 30px;
+            box-shadow: 12px 12px 28px rgba(0, 0, 0, 0.45),
+                        -6px -6px 18px rgba(255, 255, 255, 0.04);
+            transition: 0.3s ease;
+        }
+
+        /* 3D hover effect for cards */
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 16px 16px 35px rgba(0, 0, 0, 0.55);
+        }
+
+        /* Main section headings */
+        h2 {
+            color: #93c5fd;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+
+        /* Smaller headings inside cards */
+        h3 {
+            color: #facc15;
+            margin-bottom: 10px;
+        }
+
+        /* Paragraph styling */
+        p {
+            margin-bottom: 15px;
+            color: #e2e8f0;
+        }
+
+        /* Grid layout for the three planned enhancements */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        /* Skill tags shown in the skills section */
+        .tag {
+            display: inline-block;
+            background-color: #2563eb;
+            color: white;
+            padding: 8px 14px;
+            border-radius: 25px;
+            margin: 5px 5px 5px 0;
+            font-size: 0.9rem;
+            box-shadow: 0 5px 12px rgba(37, 99, 235, 0.35);
+        }
+
+        /* Highlighted important text */
+        .highlight {
+            color: #facc15;
+            font-weight: bold;
+        }
+
+        /* Footer at the bottom of the page */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #020617;
+            color: #cbd5e1;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header section for the ePortfolio title and summary -->
+    <header>
+        <h1>CS 499 Computer Science ePortfolio</h1>
+        <p>
+            This ePortfolio presents my computer science skills, enhanced artifact, and professional growth through the CS 499 capstone course.
+        </p>
+    </header>
+
+    <!-- Navigation menu for each major page section -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#artifact">Artifact</a>
+        <a href="#enhancements">Enhancements</a>
+        <a href="#skills">Skills</a>
+        <a href="#goal">Goal</a>
+    </nav>
+
+    <main>
+
+        <!-- About section explaining the purpose of the ePortfolio -->
+        <section id="about" class="card">
+            <h2>About This ePortfolio</h2>
+            <p>
+                This website was created for my CS 499 Computer Science capstone course. It will be used to present my code review, enhancement narratives, professional self assessment, and final enhanced artifact.
+            </p>
+            <p>
+                My main goal is to show my ability to take an existing project and improve it into a stronger, more secure, and more professional software solution.
+            </p>
+        </section>
+
+        <!-- Artifact section explaining the original project selected for enhancement -->
+        <section id="artifact" class="card">
+            <h2>Selected Artifact</h2>
+            <p>
+                The artifact I selected is an Android Studio mobile inventory application created in CS 360 Mobile Architecture and Programming.
+            </p>
+            <p>
+                The original application includes user login, registration, inventory management, database storage, and SMS notification features. For this capstone project, I plan to convert the mobile application into a <span class="highlight">web based inventory application</span>.
+            </p>
+        </section>
+
+        <!-- Enhancement section showing the three CS 499 enhancement categories -->
+        <section id="enhancements">
+            <h2>Planned Enhancements</h2>
+
+            <div class="grid">
+
+                <!-- Category One enhancement for software engineering and design -->
+                <div class="card">
+                    <h3>Software Engineering and Design</h3>
+                    <p>
+                        I will redesign the Android mobile app into a web based application with a professional user interface, clear navigation, responsive pages, and improved user experience.
+                    </p>
+                </div>
+
+                <!-- Category Two enhancement for algorithms and data structures -->
+                <div class="card">
+                    <h3>Algorithms and Data Structures</h3>
+                    <p>
+                        I will improve the inventory logic by adding search, sorting, filtering, and low stock alert features. These improvements will help users find and manage inventory faster.
+                    </p>
+                </div>
+
+                <!-- Category Three enhancement for database design -->
+                <div class="card">
+                    <h3>Databases</h3>
+                    <p>
+                        I will redesign the data storage system for the web application by creating a stronger database structure for users, products, inventory quantities, and alerts.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Skills section listing the technical and professional skills shown in the portfolio -->
+        <section id="skills" class="card">
+            <h2>Skills Demonstrated</h2>
+            <p>
+                This ePortfolio will show my growth in software design, web development, database design, algorithmic thinking, secure coding, and professional communication.
+            </p>
+
+            <!-- Skill tags for quick visual summary -->
+            <span class="tag">Web Development</span>
+            <span class="tag">Software Engineering</span>
+            <span class="tag">Database Design</span>
+            <span class="tag">Inventory Management</span>
+            <span class="tag">Secure Coding</span>
+            <span class="tag">Algorithms</span>
+            <span class="tag">Professional Communication</span>
+        </section>
+
+        <!-- Goal section explaining the professional purpose of the portfolio -->
+        <section id="goal" class="card">
+            <h2>Professional Goal</h2>
+            <p>
+                My career goal is to continue developing my skills in computer science and software engineering while building practical applications that solve real problems. This project will help demonstrate my ability to improve existing software and prepare it for professional use.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer section for the bottom of the page -->
+    <footer>
+        <p>CS 499 ePortfolio | Computer Science Capstone</p>
+    </footer>
+
+</body>
+</html>
